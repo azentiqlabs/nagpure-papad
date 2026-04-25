@@ -93,7 +93,7 @@ export default function HeroSection() {
           <div className="flex gap-8 justify-center lg:justify-start pt-4">
             {[
               { num: '30+', label: 'Years' },
-              { num: '5000+', label: 'Happy Families' },
+              { num: '300+', label: 'Happy Families' },
               { num: '100%', label: 'Homemade' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
