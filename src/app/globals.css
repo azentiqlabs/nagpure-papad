@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --maroon: #7B1C1C;
+  --maroon-dark: #5c1414;
+  --saffron: #E8861A;
+  --saffron-light: #F4A418;
+  --gold: #C9962A;
+  --cream: #FDFAF0;
+  --cream-200: #F5E8C0;
+  --forest: #2D5A27;
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-devanagari: var(--font-devanagari), serif;
+  --font-body: var(--font-lora), Georgia, serif;
+  --font-sans: var(--font-nunito), sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--cream);
+}
+
+/* ── Traditional patterns ── */
+.mandala-bg {
+  background-image: radial-gradient(circle at 50% 50%,
+    rgba(232, 134, 26, 0.06) 0%,
+    transparent 60%),
+    repeating-conic-gradient(
+      from 0deg at 50% 50%,
+      rgba(201, 150, 42, 0.04) 0deg,
+      transparent 15deg,
+      rgba(201, 150, 42, 0.04) 30deg
+    );
+}
+
+.border-pattern {
+  border-image: repeating-linear-gradient(
+    90deg,
+    var(--saffron) 0px,
+    var(--saffron) 4px,
+    transparent 4px,
+    transparent 8px,
+    var(--gold) 8px,
+    var(--gold) 12px,
+    transparent 12px,
+    transparent 16px
+  ) 4;
+}
+
+.diagonal-stripes {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(201, 150, 42, 0.08) 0px,
+    rgba(201, 150, 42, 0.08) 2px,
+    transparent 2px,
+    transparent 12px
+  );
+}
+
+/* ── Typography ── */
+.font-devanagari { font-family: var(--font-devanagari); }
+.font-display { font-family: var(--font-serif); }
+.font-body { font-family: var(--font-body); }
+.font-sans { font-family: var(--font-sans); }
+
+/* ── Gold shimmer text ── */
+.gold-text {
+  background: linear-gradient(
+    135deg,
+    #8B6914 0%,
+    #C9962A 25%,
+    #F4D03F 50%,
+    #C9962A 75%,
+    #8B6914 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  to { background-position: 200% center; }
+}
+
+/* ── Section divider ── */
+.divider-ornament {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.divider-ornament::before,
+.divider-ornament::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* ── Cards ── */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(123, 28, 28, 0.18);
+}
+
+/* ── WhatsApp button pulse ── */
+.whatsapp-pulse {
+  animation: pulse-ring 2s ease-in-out infinite;
+}
+@keyframes pulse-ring {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  50% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Custom scrollbar ── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--maroon); border-radius: 4px; }
+
+/* ── Texture overlay ── */
+.texture-overlay {
+  position: relative;
+}
+.texture-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Ccircle cx='1' cy='1' r='0.5' fill='rgba(0,0,0,0.04)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
