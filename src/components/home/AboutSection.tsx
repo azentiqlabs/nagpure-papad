@@ -51,7 +51,7 @@ export default function AboutSection() {
             </div>
 
             <p className="text-maroon-600/80 font-body text-lg leading-relaxed">
-              It began in <strong className="text-maroon-700">{SINCE_YEAR}</strong> in a small Nagpur kitchen 
+              It began in <strong className="text-maroon-700">{SINCE_YEAR}</strong> in a small Akola kitchen 
               where our grandmother would wake at dawn to prepare papads for the family. 
               What started as a labor of love has grown into a trusted household name.
             </p>
@@ -69,7 +69,7 @@ export default function AboutSection() {
                 "Our papads are not just food — they are our family's tradition."
               </p>
               <p className="text-saffron-600 font-sans font-semibold text-sm mt-2">
-                — Nagpure Family, Nagpur
+                — Nagpure Family, Akola
               </p>
             </div>
 

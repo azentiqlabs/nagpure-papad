@@ -1,6 +1,6 @@
 import { Product, NavItem, Testimonial } from '@/types';
 
-export const WHATSAPP_NUMBER = '918329305232'; // Replace with actual number
+export const WHATSAPP_NUMBER = '919822569020'; // Replace with actual number
 export const BUSINESS_NAME = 'Nagpure Papad & Kurdya';
 export const BUSINESS_TAGLINE = 'घरघुती स्वाद, परंपरेची साथ';
 export const BUSINESS_TAGLINE_EN = 'Homemade Taste, Traditional Touch';
@@ -147,19 +147,19 @@ export const QUALITY_FEATURES = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     name: 'Sunita Deshmukh',
-    location: 'Pune',
+    location: 'Akola',
     text: 'Nagpure papad takes me back to my childhood! The masala kurdya is exactly how my mother used to make them. Ordered twice already!',
     rating: 5,
   },
   {
     name: 'Rajesh Kulkarni',
-    location: 'Nagpur',
+    location: 'Akola',
     text: 'Best sabudana papad for upwas! My family orders the family combo every month. Quick WhatsApp response and fresh products.',
     rating: 5,
   },
   {
     name: 'Priya Joshi',
-    location: 'Mumbai',
+    location: 'Akola',
     text: 'Sent these as gifts to relatives abroad — everyone loved them! The quality and packaging is excellent. Highly recommended!',
     rating: 5,
   },

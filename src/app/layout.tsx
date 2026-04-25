@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   keywords: [
     'papad', 'kurdya', 'Nagpure', 'homemade papad', 'gharghuti papad',
     'maharashtrian papad', 'udid papad', 'sabudana papad', 'masala kurdya',
-    'traditional papad', 'nagpur papad', 'पापड', 'कुरिया', 'घरगुती पापड',
+    'traditional papad', 'akola papad', 'पापड', 'कुरिया', 'घरगुती पापड',
   ],
   authors: [{ name: 'Nagpure Papad & Kurdya' }],
   creator: 'Nagpure Papad & Kurdya',
