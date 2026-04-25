@@ -1,6 +1,6 @@
 import { Product, NavItem, Testimonial } from '@/types';
 
-export const WHATSAPP_NUMBER = '8329305232'; // Replace with actual number
+export const WHATSAPP_NUMBER = '918329305232'; // Replace with actual number
 export const BUSINESS_NAME = 'Nagpure Papad & Kurdya';
 export const BUSINESS_TAGLINE = 'घरघुती स्वाद, परंपरेची साथ';
 export const BUSINESS_TAGLINE_EN = 'Homemade Taste, Traditional Touch';
